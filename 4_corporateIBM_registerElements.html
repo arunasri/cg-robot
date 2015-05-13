@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>corporateIBM_registerElements</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">corporateIBM_registerElements</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/corporate/ibm/register</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=a.logo.navbar-brand</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=.logo.navbar-brand&gt;img[src*=&quot;logo-3633522c14df66d4e2d45f903b84d296.png&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#corporate-banner</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div#corporate-banner &gt; img[src*='ibm.png']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1.page-title</td>
+	<td>Join CareGeneral</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#new_user&gt;h2</td>
+	<td>Join CareGeneral</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=user_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label.required.control-label:nth(0)</td>
+	<td>* Name</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=user_email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label.required.control-label:nth(1)</td>
+	<td>* Email</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=user_password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label.required.control-label:nth(2)</td>
+	<td>* Password</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Show</td>
+	<td>Show</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.strength_text &gt; div</td>
+	<td>exact:Strength: none</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=user_password_confirmation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label.required.control-label:nth(3)</td>
+	<td>* Confirmation</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//a[contains(text(),'Show')])[2]</td>
+	<td>Show</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='new_user']/p[4]/div/div/div</td>
+	<td>exact:Strength: none</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=user_accepted_policy_and_terms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='new_user']/p[5]/label</td>
+	<td>I accept CareGeneral's Privacy Policy and Terms of Service.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Privacy Policy</td>
+	<td>Privacy Policy</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Terms of Service</td>
+	<td>Terms of Service</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.common-btn</td>
+	<td>Sign Up</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>css=button@disabled</td>
+	<td>disabled</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=a &gt; span</td>
+	<td>exact:Already Signed-up? Click Here</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Already Signed-up? Click Here</td>
+	<td>Already Signed-up? Click Here</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Contact Us</td>
+	<td>Contact Us</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=badge-app-store</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Text me the link</td>
+	<td>Text me the link</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.footer-area &gt; a</td>
+	<td>Privacy Policy</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//a[contains(text(),'Terms of Service')])[2]</td>
+	<td>Terms of Service</td>
+</tr>
+<!--testing email without ending in .ibm-->
+<!--1 - validation-->
+<tr>
+	<td>type</td>
+	<td>css=#user_name</td>
+	<td>ibmTest</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#user_email</td>
+	<td>ibm@example.ibm.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#user_password</td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#user_password_confirmation</td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#user_accepted_policy_and_terms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotAttribute</td>
+	<td>css=.common-btn@disabled</td>
+	<td>disabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.common-btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.alert.alert-error</td>
+	<td>Email already taken.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.alert.alert-error</td>
+	<td>Email already taken.</td>
+</tr>
+<!--2 - validation-->
+<tr>
+	<td>type</td>
+	<td>css=#user_name</td>
+	<td>ibmTest</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#user_email</td>
+	<td>ibm@example.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#user_password</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#user_password_confirmation</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>verifyNotAttribute</td>
+	<td>css=.common-btn@disabled</td>
+	<td>disabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.common-btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.alert.alert-error</td>
+	<td>Please signup with your IBM email address. Your email should end with .ibm.com. After you have signed up then you can change your email address to anything you want.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.alert.alert-error</td>
+	<td>Please signup with your IBM email address. Your email should end with .ibm.com. After you have signed up then you can change your email address to anything you want.</td>
+</tr>
+<!--3 - validation-->
+<tr>
+	<td>type</td>
+	<td>css=#user_name</td>
+	<td>ibmTest</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#user_email</td>
+	<td>ibmOne@example.ibm.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#user_password</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#user_password_confirmation</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>verifyNotAttribute</td>
+	<td>css=.common-btn@disabled</td>
+	<td>disabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.common-btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.alert.alert-error</td>
+	<td>Password is too short (minimum is 6 characters).</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.alert.alert-error</td>
+	<td>Password is too short (minimum is 6 characters).</td>
+</tr>
+</tbody></table>
+</body>
+</html>

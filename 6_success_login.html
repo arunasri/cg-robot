@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>sucess_login</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">sucess_login</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=a.logo.navbar-brand</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#banner-main&gt;img[src=&quot;/assets/login/photo-strip-6ca52c4c4702fc61082c01af57de6091.jpg&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1.page-title</td>
+	<td>Account login</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=user_email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p&gt;label:contains(Email)</td>
+	<td>Email</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=user_password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p&gt;label:contains(Password)</td>
+	<td>Password</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=button.common-btn</td>
+	<td>Login</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.smallprint&gt;a:nth(0)</td>
+	<td>Forgot Password</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.smallprint&gt;a:nth(1)</td>
+	<td>Didn't receive confirmation instructions?</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.smallprint&gt;a:nth(2)</td>
+	<td>Didn't receive unlock instructions?</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=.smallprint&gt;a:nth(3)</td>
+	<td>Contact Us</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=badge-app-store</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Text me the link</td>
+	<td>Text me the link</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Privacy Policy</td>
+	<td>Privacy Policy</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Terms of Service</td>
+	<td>Terms of Service</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_email</td>
+	<td>prabhakar+superadmin@bigbinary.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>welcome</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.common-btn</td>
+	<td></td>
+</tr>
+<!--start of verification of video on page-->
+<tr>
+	<td>storeElementPresent</td>
+	<td>//input[@value='Get started']</td>
+	<td>video</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${video}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${video}'!=&quot;true&quot;</td>
+	<td>negativeVideo</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//section[@id='content']/div</td>
+	<td>×Please watch welcome video to continue.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Get started']</td>
+	<td>video</td>
+</tr>
+<tr>
+	<td>verifyConfirmation</td>
+	<td>Click 'OK' if you really want to dismiss the video. You can always get to this video from the help section.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotolabel</td>
+	<td>negativeVideo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>negativeVideo</td>
+	<td></td>
+</tr>
+<!--end of verification of video on page-->
+<tr>
+	<td>verifyText</td>
+	<td>css=span.user_name</td>
+	<td>prabhakar+superadmin</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=My Info</td>
+	<td>My Info</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=a[title=&quot;Translations&quot;]</td>
+	<td>Translations</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Super Admin</td>
+	<td>Super Admin</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Admin</td>
+	<td>Admin</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Help</td>
+	<td>Help</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Getting Started</td>
+	<td>Getting Started</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Get Mobile App</td>
+	<td>Get Mobile App</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Contact Us</td>
+	<td>Contact Us</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Feedback and Suggestions</td>
+	<td>Feedback and Suggestions</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Change Language</td>
+	<td>Change Language</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Log Out</td>
+	<td>Log Out</td>
+</tr>
+</tbody></table>
+</body>
+</html>
