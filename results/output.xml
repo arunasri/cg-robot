@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20150512 23:36:34.005" generator="Robot 2.8.7 (Python 2.7.6 on darwin)">
+<suite id="s1" name="2 Individual Register Elements &amp; 1 Success Wrongemail Wrongpassword &amp; 3 Experts Register Elements &amp; 4 corporateIBM registerElements &amp; 5 corporateGulliverRegisterElements &amp; 6 Success Login">
+<suite source="/Users/meghana/code/cg-robot/src/robot-tests/2_individual_register_elements.robot" id="s1-s1" name="2 Individual Register Elements">
+<kw type="setup" name="Start Browser">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${BASE_URL}</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20150512 23:36:34.141" level="INFO">Opening browser 'chrome' to base url 'http://caregeneral.net'</msg>
+<status status="PASS" endtime="20150512 23:36:36.926" starttime="20150512 23:36:34.140"></status>
+</kw>
+<status status="PASS" endtime="20150512 23:36:36.927" starttime="20150512 23:36:34.139"></status>
+</kw>
+<test id="s1-s1-t1" name="2_individual_register_elements">
+<kw type="kw" name="base.Login As User">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BASE_URL}/login</arg>
+</arguments>
+<msg timestamp="20150512 23:36:36.929" level="INFO">Opening url 'http://caregeneral.net/login'</msg>
+<status status="PASS" endtime="20150512 23:36:37.235" starttime="20150512 23:36:36.929"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=user_email</arg>
+<arg>prabhakar+superadmin@bigbinary.com</arg>
+</arguments>
+<msg timestamp="20150512 23:36:37.237" level="INFO">Typing text 'prabhakar+superadmin@bigbinary.com' into text field 'id=user_email'</msg>
+<status status="PASS" endtime="20150512 23:36:37.584" starttime="20150512 23:36:37.236"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=user_password</arg>
+<arg>welcome</arg>
+</arguments>
+<msg timestamp="20150512 23:36:37.585" level="INFO">Typing text 'welcome' into text field 'id=user_password'</msg>
+<status status="PASS" endtime="20150512 23:36:37.706" starttime="20150512 23:36:37.584"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=button.common-btn</arg>
+</arguments>
+<msg timestamp="20150512 23:36:37.706" level="INFO">Clicking element 'css=button.common-btn'.</msg>
+<status status="PASS" endtime="20150512 23:36:38.947" starttime="20150512 23:36:37.706"></status>
+</kw>
+<status status="PASS" endtime="20150512 23:36:38.947" starttime="20150512 23:36:36.928"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BASE_URL}/individuals/register</arg>
+</arguments>
+<msg timestamp="20150512 23:36:38.948" level="INFO">Opening url 'http://caregeneral.net/individuals/register'</msg>
+<status status="PASS" endtime="20150512 23:36:39.940" starttime="20150512 23:36:38.948"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Select Window">
+<doc>Selects the window found with `locator` as the context of actions.</doc>
+<arguments>
+<arg>null</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20150512 23:36:40.501" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150512 23:36:40.501" starttime="20150512 23:36:39.942"></status>
+</kw>
+<msg timestamp="20150512 23:36:40.505" level="FAIL">WebDriverException: Message: unknown error: 'name' must be a nonempty string
+  (Session info: chrome=42.0.2311.135)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Mac OS X 10.10.3 x86_64)
+</msg>
+<status status="FAIL" endtime="20150512 23:36:40.505" starttime="20150512 23:36:39.940"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150512 23:36:40.505" critical="yes" starttime="20150512 23:36:36.927">WebDriverException: Message: unknown error: 'name' must be a nonempty string
+  (Session info: chrome=42.0.2311.135)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Mac OS X 10.10.3 x86_64)
+</status>
+</test>
+<kw type="teardown" name="Stop Browser">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Stopping the Browser</arg>
+</arguments>
+<msg timestamp="20150512 23:36:40.507" level="INFO">Stopping the Browser</msg>
+<status status="PASS" endtime="20150512 23:36:40.507" starttime="20150512 23:36:40.507"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150512 23:36:41.283" starttime="20150512 23:36:40.507"></status>
+</kw>
+<status status="PASS" endtime="20150512 23:36:41.284" starttime="20150512 23:36:40.506"></status>
+</kw>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20150512 23:36:41.284" starttime="20150512 23:36:34.036"></status>
+</suite>
+<suite source="/Users/meghana/code/cg-robot/1_success_wrongemail_wrongpassword.robot" id="s1-s2" name="1 Success Wrongemail Wrongpassword">
+<kw type="setup" name="Start Browser">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${BASE_URL}</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20150512 23:36:41.292" level="INFO">Opening browser 'chrome' to base url 'http://www.caregeneral.net'</msg>
+<status status="PASS" endtime="20150512 23:36:43.945" starttime="20150512 23:36:41.292"></status>
+</kw>
+<status status="PASS" endtime="20150512 23:36:43.946" starttime="20150512 23:36:41.292"></status>
+</kw>
+<test id="s1-s2-t1" name="elements_verification_on_superadmin_page">
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BASE_URL}/patients</arg>
+</arguments>
+<msg timestamp="20150512 23:36:43.948" level="INFO">Opening url 'http://www.caregeneral.net/patients'</msg>
+<status status="PASS" endtime="20150512 23:36:44.256" starttime="20150512 23:36:43.948"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>link=William</arg>
+</arguments>
+<msg timestamp="20150512 23:36:44.257" level="INFO">Clicking element 'link=William'.</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20150512 23:36:45.325" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150512 23:36:45.325" starttime="20150512 23:36:44.305"></status>
+</kw>
+<msg timestamp="20150512 23:36:45.326" level="FAIL">ValueError: Element locator 'link=William' did not match any elements.</msg>
+<status status="FAIL" endtime="20150512 23:36:45.326" starttime="20150512 23:36:44.256"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150512 23:36:45.326" critical="yes" starttime="20150512 23:36:43.946">ValueError: Element locator 'link=William' did not match any elements.</status>
+</test>
+<kw type="teardown" name="Stop Browser">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Stopping the Browser</arg>
+</arguments>
+<msg timestamp="20150512 23:36:45.328" level="INFO">Stopping the Browser</msg>
+<status status="PASS" endtime="20150512 23:36:45.328" starttime="20150512 23:36:45.327"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150512 23:36:45.389" starttime="20150512 23:36:45.328"></status>
+</kw>
+<status status="PASS" endtime="20150512 23:36:45.389" starttime="20150512 23:36:45.327"></status>
+</kw>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20150512 23:36:45.389" starttime="20150512 23:36:41.286"></status>
+</suite>
+<suite source="/Users/meghana/code/cg-robot/3_experts_register_elements.robot" id="s1-s3" name="3 Experts Register Elements">
+<kw type="setup" name="Start Browser">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${BASE_URL}</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20150512 23:36:45.396" level="INFO">Opening browser 'chrome' to base url 'http://www.caregeneral.net'</msg>
+<status status="PASS" endtime="20150512 23:36:48.145" starttime="20150512 23:36:45.396"></status>
+</kw>
+<status status="PASS" endtime="20150512 23:36:48.145" starttime="20150512 23:36:45.395"></status>
+</kw>
+<test id="s1-s3-t1" name="experts_register_elements">
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BASE_URL}/experts/register</arg>
+</arguments>
+<msg timestamp="20150512 23:36:48.147" level="INFO">Opening url 'http://www.caregeneral.net/experts/register'</msg>
+<status status="PASS" endtime="20150512 23:36:48.466" starttime="20150512 23:36:48.146"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=h1.page-title</arg>
+<arg>Join Our Expert Network</arg>
+</arguments>
+<msg timestamp="20150512 23:36:48.483" level="INFO">Current page contains element 'css=h1.page-title'.</msg>
+<status status="PASS" endtime="20150512 23:36:48.483" starttime="20150512 23:36:48.467"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=h3.greetings-top</arg>
+<arg>Joining CareGeneral is Fast, Easy and Free</arg>
+</arguments>
+<msg timestamp="20150512 23:36:48.497" level="INFO">Current page contains element 'css=h3.greetings-top'.</msg>
+<status status="PASS" endtime="20150512 23:36:48.497" starttime="20150512 23:36:48.484"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=h3.greetings-bottom</arg>
+<arg>Just Create a Profile and Caregeneral will bring clients to you!</arg>
+</arguments>
+<msg timestamp="20150512 23:36:48.510" level="INFO">Current page contains element 'css=h3.greetings-bottom'.</msg>
+<status status="PASS" endtime="20150512 23:36:48.510" starttime="20150512 23:36:48.498"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>id=user_name</arg>
+</arguments>
+<msg timestamp="20150512 23:36:48.522" level="INFO">Current page contains element 'id=user_name'.</msg>
+<status status="PASS" endtime="20150512 23:36:48.522" starttime="20150512 23:36:48.510"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>id=user_email</arg>
+</arguments>
+<msg timestamp="20150512 23:36:48.535" level="INFO">Current page contains element 'id=user_email'.</msg>
+<status status="PASS" endtime="20150512 23:36:48.535" starttime="20150512 23:36:48.523"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>id=user_password</arg>
+</arguments>
+<msg timestamp="20150512 23:36:48.547" level="INFO">Current page contains element 'id=user_password'.</msg>
+<status status="PASS" endtime="20150512 23:36:48.547" starttime="20150512 23:36:48.535"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>link=Show</arg>
+<arg>Show</arg>
+</arguments>
+<msg timestamp="20150512 23:36:48.591" level="INFO">&lt;!DOCTYPE html&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en"&gt;&lt;head&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" /&gt;
+
+  &lt;title&gt;CareGeneral&lt;/title&gt;
+  &lt;meta content="authenticity_token" name="csrf-param" /&gt;
+&lt;meta content="9Sg/HVDt2iXlbGLuuLtGbpN+L5qkO6gmST1mPP3X5s4=" name="csrf-token" /&gt;
+
+  &lt;link href="/assets/login-3bbb39ef384be0abc346654a7a99c50b.css" media="all" rel="stylesheet" /&gt;
+  &lt;link href="/assets/application-6e8facf076ec0ec11c25ea5b70526625.css" media="all" rel="stylesheet" /&gt;
+  &lt;script src="/assets/application-7792af2e68ee49c674f096806574ec8a.js"&gt;&lt;/script&gt;
+  
+  &lt;meta name="google-site-verification" content="MtUlQAWsqiLnj_blOrNCQ7Rq9CYM6-MlCaUxNy2MXAs" /&gt;
+
+  &lt;link rel="icon" href="/color-favicon.ico" type="image/x-icon" sizes="16x16 32x32" /&gt;
+  &lt;link rel="shortcut icon" href="/color-favicon.ico" type="image/x-icon" /&gt;
+
+  &lt;!-- Le HTML5 shim, for IE6-8 support of HTML elements --&gt;
+  &lt;!--[if lt IE 9]&gt;
+  &lt;script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"
+          type="text/javascript"&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+&lt;style type="text/css"&gt;.js-slide-hidden{position:absolute !important;left:-9999px !important;top:-9999px !important;display:block !important}&lt;/style&gt;&lt;style type="text/css"&gt;.ui-widget-overlay{background: #000; opacity: 0.4; filter: alpha(opacity=40)} .ui-widget-overlay.transparent{opacity: 0; filter: alpha(opacity=0);}&lt;/style&gt;&lt;/head&gt;
+&lt;body class="registrations_page not_logged_in  staging registrations_new" onload="scrollTo(0,0);" data-spy="scroll" data-target="#sidebar_nav"&gt;
+
+
+&lt;!-- Moved to the top because the autofocus attribute for Chrome, Safari and Opera scroll to last element --&gt;
+&lt;div class="popup-holder"&gt;
+  
+  &lt;div class="custom_modals"&gt;
+  
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- wrapper --&gt;
+&lt;div class="wrapper"&gt;
+
+  &lt;header id="header"&gt;
+  &lt;nav id="nav" class="navbar navbar-default" role="navigation"&gt;
+
+  &lt;div class="navbar-header"&gt;
+    &lt;a class="logo navbar-brand" href="/"&gt;
+          &lt;img alt="Logo" src="/assets/logo-3633522c14df66d4e2d45f903b84d296.png" /&gt;
+    &lt;/a&gt;
+    
+  &lt;/div&gt;
+
+
+  &lt;!-- /.navbar-collapse --&gt;
+&lt;/nav&gt;
+
+&lt;/header&gt;
+
+  &lt;!-- main --&gt;
+  &lt;div id="main" class="container_fluid"&gt;
+    &lt;div class="row"&gt;
+
+      &lt;!-- content --&gt;
+      
+
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script&gt;
+      window.location = "/upgrade";
+    &lt;/script&gt;
+  &lt;![endif]--&gt;
+
+  &lt;section class="devise_section"&gt;
+    &lt;main id="content-main"&gt;
+        &lt;div id="banner-main"&gt;
+          &lt;img alt="Photo strip" src="/assets/login/photo-strip-6ca52c4c4702fc61082c01af57de6091.jpg" /&gt;
+        &lt;/div&gt;
+
+      &lt;header&gt;
+        &lt;h1 class="page-title"&gt;Join Our Expert Network&lt;/h1&gt;
+      &lt;/header&gt;
+
+      &lt;div class="band"&gt;
+        
+        &lt;div id="module-login"&gt;
+          
+&lt;div class="alert alert-info"&gt;
+  &lt;h3 class="greetings-top"&gt;
+    Joining CareGeneral is Fast, Easy and Free
+  &lt;/h3&gt;
+
+  &lt;h3 class="greetings-bottom"&gt;
+    Just Create a Profile and Caregeneral will bring clients to you!
+  &lt;/h3&gt;
+&lt;/div&gt;
+
+
+&lt;form accept-charset="UTF-8" action="/experts/user/register" class="simple_form common-frm clearfix" id="new_user" method="post" novalidate="novalidate"&gt;&lt;div style="margin:0;padding:0;display:inline"&gt;&lt;input name="utf8" type="hidden" value="✓" /&gt;&lt;input name="authenticity_token" type="hidden" value="9Sg/HVDt2iXlbGLuuLtGbpN+L5qkO6gmST1mPP3X5s4=" /&gt;&lt;/div&gt;
+
+  &lt;p&gt;
+    &lt;label class="string required control-label" for="user_name"&gt;&lt;abbr title="required"&gt;*&lt;/abbr&gt; Name&lt;/label&gt;
+    &lt;input autofocus="autofocus" id="user_name" name="user[name]" placeholder="Name" tabindex="1" type="text" /&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;label class="email required control-label" for="user_email"&gt;&lt;abbr title="required"&gt;*&lt;/abbr&gt; Email&lt;/label&gt;
+    &lt;input id="user_email" name="user[email]" placeholder="Email" tabindex="2" type="email" /&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;label class="password required control-label" for="user_password"&gt;&lt;abbr title="required"&gt;*&lt;/abbr&gt; Password&lt;/label&gt;
+    &lt;div class="strength_wrapper" style="position: relative; vertical-align: middle; width: 303px; height: 46px; margin: 0px; font-size: 18px; border-radius: 5px;"&gt;&lt;input id="user_password" name="user[password]" placeholder="Password" tabindex="3" type="password" class="strength" data-password="user_password" /&gt;                    &lt;input style="display:none" class="strengthstrength" data-password="user_password" type="text" name="user[password]" placeholder="Password" value="" disabled="disabled" /&gt;                    &lt;a data-password-button="user_password" href="" class="button_showhide"&gt;Show&lt;/a&gt;                &lt;div class="strength_text"&gt;                  &lt;div data-strength-text="user_password"&gt;Strength: none&lt;/div&gt;                &lt;/div&gt;                &lt;div class="strength_meter"&gt;                  &lt;div data-meter="user_password"&gt;Strength&lt;/div&gt;                &lt;/div&gt;&lt;/div&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;label class="password required control-label" for="user_password_confirmation"&gt;&lt;abbr title="required"&gt;*&lt;/abbr&gt; Confirmation&lt;/label&gt;
+    &lt;div class="strength_wrapper" style="position: relative; vertical-align: middle; width: 303px; height: 46px; margin: 0px; font-size: 18px; border-radius: 5px;"&gt;&lt;input id="user_password_confirmation" name="user[password_confirmation]" placeholder="Confirmation" tabindex="4" type="password" class="strength" data-password="user_password_confirmation" /&gt;                    &lt;input style="display:none" class="strengthstrength" data-password="user_password_confirmation" type="text" name="user[password_confirmation]" placeholder="Confirmation" value="" disabled="disabled" /&gt;                    &lt;a data-password-button="user_password_confirmation" href="" class="button_showhide"&gt;Show&lt;/a&gt;                &lt;div class="strength_text"&gt;                  &lt;div data-strength-text="user_password_confirmation"&gt;Strength: none&lt;/div&gt;                &lt;/div&gt;                &lt;div class="strength_meter"&gt;                  &lt;div data-meter="user_password_confirmation"&gt;Strength&lt;/div&gt;                &lt;/div&gt;&lt;/div&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;label for="user_accepted_policy_and_terms"&gt;
+      &lt;input name="user[accepted_policy_and_terms]" type="hidden" value="0" /&gt;&lt;input data-behavior="accept-policy-and-terms" id="user_accepted_policy_and_terms" name="user[accepted_policy_and_terms]" tabindex="5" type="checkbox" value="1" /&gt;
+      I accept CareGeneral's &lt;a href="/pdf/privacy_policy.pdf"&gt;Privacy Policy&lt;/a&gt; and &lt;a href="/pdf/terms_of_service.pdf"&gt;Terms of Service&lt;/a&gt;.&lt;/label&gt;  &lt;/p&gt;
+
+  &lt;div class="smallprint"&gt;
+      &lt;a href="/users/sign_in"&gt;Sign In&lt;/a&gt;
+
+
+  &lt;br /&gt;
+  &lt;a href="/users/password/new"&gt;Forgot Password&lt;/a&gt;
+
+  &lt;br /&gt;
+  &lt;a href="/users/confirmation/new"&gt;Didn't receive confirmation instructions?&lt;/a&gt;
+
+  &lt;br /&gt;
+  &lt;a href="/users/unlock/new"&gt;Didn't receive unlock instructions?&lt;/a&gt;
+
+
+&lt;br /&gt;
+&lt;a href="/contact_us"&gt;Contact Us&lt;/a&gt;
+
+  &lt;/div&gt;
+  &lt;p&gt;
+    &lt;button class="common-btn" type="submit" disabled="disabled"&gt;Sign Up&lt;/button&gt;
+  &lt;/p&gt;
+&lt;/form&gt;
+
+          &lt;div class="mobile-links"&gt;
+  &lt;a href="https://itunes.apple.com/us/app/caregeneral/id691545576"&gt;
+    &lt;img alt="Available on the App Store" id="badge-app-store" src="/assets/login/badge-app-store-52b159edf4cc0b3a9540662d9912a559.png" /&gt;
+&lt;/a&gt;
+  &lt;a class="send_sms_link" href="/mobile/new"&gt;Text me the link&lt;/a&gt;
+&lt;/div&gt;
+
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/main&gt;
+  &lt;/section&gt;
+
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- footer --&gt;
+&lt;footer id="footer"&gt;
+  &lt;div class="footer-area"&gt;
+    &lt;a href="/pdf/privacy_policy.pdf"&gt;Privacy Policy&lt;/a&gt; | &lt;a href="/pdf/terms_of_service.pdf"&gt;Terms of Service&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+
+
+&lt;/div&gt;
+
+
+
+&lt;script type="text/javascript"&gt;
+  window.locale = "en";
+&lt;/script&gt;
+
+
+
+&lt;div id="ptTimeSelectCntr" class=""&gt;        &lt;div class="ui-widget ui-widget-content ui-corner-all"&gt;        &lt;div class="ui-widget-header ui-corner-all"&gt;            &lt;div id="ptTimeSelectCloseCntr" style="float: right;"&gt;                &lt;a href="javascript: void(0);" onclick="jQuery.ptTimeSelect.closeCntr();" onmouseover="jQuery(this).removeClass('ui-state-default').addClass('ui-state-hover');" onmouseout="jQuery(this).removeClass('ui-state-hover').addClass('ui-state-default');" class="ui-corner-all ui-state-default"&gt;                    &lt;span class="ui-icon ui-icon-circle-close"&gt;X&lt;/span&gt;                &lt;/a&gt;            &lt;/div&gt;            &lt;div id="ptTimeSelectUserTime" style="float: left;"&gt;                &lt;span id="ptTimeSelectUserSelHr"&gt;1&lt;/span&gt; :                 &lt;span id="ptTimeSelectUserSelMin"&gt;00&lt;/span&gt;                 &lt;span id="ptTimeSelectUserSelAmPm"&gt;AM&lt;/span&gt;            &lt;/div&gt;            &lt;br style="clear: both;" /&gt;&lt;div&gt;&lt;/div&gt;        &lt;/div&gt;        &lt;div class="ui-widget-content ui-corner-all"&gt;            &lt;div&gt;                &lt;div class="ptTimeSelectTimeLabelsCntr"&gt;                    &lt;div class="ptTimeSelectLeftPane" style="width: 50%; text-align: center; float: left;"&gt;Hour&lt;/div&gt;                    &lt;div class="ptTimeSelectRightPane" style="width: 50%; text-align: center; float: left;"&gt;Minutes&lt;/div&gt;                &lt;/div&gt;                &lt;div&gt;                    &lt;div style="float: left; width: 50%;"&gt;                        &lt;div class="ui-widget-content ptTimeSelectLeftPane"&gt;                            &lt;div class="ptTimeSelectHrAmPmCntr"&gt;                                &lt;a class="ptTimeSelectHr ui-state-default" href="javascript: void(0);" style="display: block; width: 45%; float: left;"&gt;AM&lt;/a&gt;                                &lt;a class="ptTimeSelectHr ui-state-default" href="javascript: void(0);" style="display: block; width: 45%; float: left;"&gt;PM&lt;/a&gt;                                &lt;br style="clear: left;" /&gt;&lt;div&gt;&lt;/div&gt;                            &lt;/div&gt;                            &lt;div class="ptTimeSelectHrCntr"&gt;                                &lt;a class="ptTimeSelectHr ui-state-default" href="javascript: void(0);"&gt;1&lt;/a&gt;                                &lt;a class="ptTimeSelectHr ui-state-default" href="javascript: void(0);"&gt;2&lt;/a&gt;                                &lt;a class="ptTimeSelectHr ui-state-default" href="javascript: void(0);"&gt;3&lt;/a&gt;                                &lt;a class="ptTimeSelectHr ui-state-default" href="javascript: void(0);"&gt;4&lt;/a&gt;                                &lt;a class="ptTimeSelectHr ui-state-default" href="javascript: void(0);"&gt;5&lt;/a&gt;                                &lt;a class="ptTimeSelectHr ui-state-default" href="javascript: void(0);"&gt;6&lt;/a&gt;                                &lt;a class="ptTimeSelectHr ui-state-default" href="javascript: void(0);"&gt;7&lt;/a&gt;                                &lt;a class="ptTimeSelectHr ui-state-default" href="javascript: void(0);"&gt;8&lt;/a&gt;                                &lt;a class="ptTimeSelectHr ui-state-default" href="javascript: void(0);"&gt;9&lt;/a&gt;                                &lt;a class="ptTimeSelectHr ui-state-default" href="javascript: void(0);"&gt;10&lt;/a&gt;                                &lt;a class="ptTimeSelectHr ui-state-default" href="javascript: void(0);"&gt;11&lt;/a&gt;                                &lt;a class="ptTimeSelectHr ui-state-default" href="javascript: void(0);"&gt;12&lt;/a&gt;                                &lt;br style="clear: left;" /&gt;&lt;div&gt;&lt;/div&gt;                            &lt;/div&gt;                        &lt;/div&gt;                    &lt;/div&gt;                    &lt;div style="width: 50%; float: left;"&gt;                        &lt;div class="ui-widget-content ptTimeSelectRightPane"&gt;                            &lt;div class="ptTimeSelectMinCntr"&gt;                                &lt;a class="ptTimeSelectMin ui-state-default" href="javascript: void(0);"&gt;00&lt;/a&gt;                                &lt;a class="ptTimeSelectMin ui-state-default" href="javascript: void(0);"&gt;05&lt;/a&gt;                                &lt;a class="ptTimeSelectMin ui-state-default" href="javascript: void(0);"&gt;10&lt;/a&gt;                                &lt;a class="ptTimeSelectMin ui-state-default" href="javascript: void(0);"&gt;15&lt;/a&gt;                                &lt;a class="ptTimeSelectMin ui-state-default" href="javascript: void(0);"&gt;20&lt;/a&gt;                                &lt;a class="ptTimeSelectMin ui-state-default" href="javascript: void(0);"&gt;25&lt;/a&gt;                                &lt;a class="ptTimeSelectMin ui-state-default" href="javascript: void(0);"&gt;30&lt;/a&gt;                                &lt;a class="ptTimeSelectMin ui-state-default" href="javascript: void(0);"&gt;35&lt;/a&gt;                                &lt;a class="ptTimeSelectMin ui-state-default" href="javascript: void(0);"&gt;40&lt;/a&gt;                                &lt;a class="ptTimeSelectMin ui-state-default" href="javascript: void(0);"&gt;45&lt;/a&gt;                                &lt;a class="ptTimeSelectMin ui-state-default" href="javascript: void(0);"&gt;50&lt;/a&gt;                                &lt;a class="ptTimeSelectMin ui-state-default" href="javascript: void(0);"&gt;55&lt;/a&gt;                                &lt;br style="clear: left;" /&gt;&lt;div&gt;&lt;/div&gt;                            &lt;/div&gt;                        &lt;/div&gt;                    &lt;/div&gt;                &lt;/div&gt;            &lt;/div&gt;            &lt;div style="clear: left;"&gt;&lt;/div&gt;        &lt;/div&gt;        &lt;div id="ptTimeSelectSetButton"&gt;            &lt;a href="javascript: void(0);" onclick="jQuery.ptTimeSelect.setTime()" onmouseover="jQuery(this).removeClass('ui-state-default').addClass('ui-state-hover');" onmouseout="jQuery(this).removeClass('ui-state-hover').addClass('ui-state-default');" class="ui-corner-all ui-state-default"&gt;                SET            &lt;/a&gt;            &lt;br style="clear: both;" /&gt;&lt;div&gt;&lt;/div&gt;        &lt;/div&gt;        &lt;!--[if lte IE 6.5]&gt;            &lt;iframe style="display:block; position:absolute;top: 0;left:0;z-index:-1;                filter:Alpha(Opacity='0');width:3000px;height:3000px"&gt;&lt;/iframe&gt;        &lt;![endif]--&gt;    &lt;/div&gt;&lt;/div&gt;&lt;div class="ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="-1" role="dialog" aria-labelledby="ui-id-1" style="display: none; outline: 0px; z-index: 1000;"&gt;&lt;div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"&gt;&lt;span id="ui-id-1" class="ui-dialog-title"&gt; &lt;/span&gt;&lt;a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button"&gt;&lt;span class="ui-icon ui-icon-closethick"&gt;close&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;div id="expire_session_popup" class="lightbox expires_session_popup ui-dialog-content ui-widget-content"&gt;
+    &lt;section class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h2&gt;Your session is expiring&lt;/h2&gt;
+      &lt;/div&gt;
+      &lt;div class="row"&gt;
+        &lt;div class="col-sm-10 col-sm-offset-1"&gt;
+          You have been inactive for a while and for your protection you will be logged out in
+          &lt;span data-behavior="expires-in"&gt;&lt;/span&gt;
+
+          &lt;br /&gt;
+          &lt;br /&gt;
+
+          &lt;a data-behavior="extend-session" href="#"&gt;Extend My Session&lt;/a&gt;          |
+          &lt;a href="/logout"&gt;Sign Me Out&lt;/a&gt;          &lt;br /&gt;
+          &lt;br /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20150512 23:36:49.237" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150512 23:36:49.237" starttime="20150512 23:36:48.592"></status>
+</kw>
+<msg timestamp="20150512 23:36:49.238" level="FAIL">Show</msg>
+<status status="FAIL" endtime="20150512 23:36:49.238" starttime="20150512 23:36:48.547"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150512 23:36:49.238" critical="yes" starttime="20150512 23:36:48.145">Show</status>
+</test>
+<kw type="teardown" name="Stop Browser">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Stopping the Browser</arg>
+</arguments>
+<msg timestamp="20150512 23:36:49.239" level="INFO">Stopping the Browser</msg>
+<status status="PASS" endtime="20150512 23:36:49.239" starttime="20150512 23:36:49.239"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150512 23:36:49.301" starttime="20150512 23:36:49.240"></status>
+</kw>
+<status status="PASS" endtime="20150512 23:36:49.301" starttime="20150512 23:36:49.239"></status>
+</kw>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20150512 23:36:49.301" starttime="20150512 23:36:45.391"></status>
+</suite>
+<suite source="/Users/meghana/code/cg-robot/4_corporateIBM_registerElements.robot" id="s1-s4" name="4 corporateIBM registerElements">
+<kw type="setup" name="Start Browser">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${BASE_URL}</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20150512 23:36:49.309" level="INFO">Opening browser 'chrome' to base url 'http://www.caregeneral.net'</msg>
+<status status="PASS" endtime="20150512 23:36:52.066" starttime="20150512 23:36:49.308"></status>
+</kw>
+<status status="PASS" endtime="20150512 23:36:52.067" starttime="20150512 23:36:49.307"></status>
+</kw>
+<test id="s1-s4-t1" name="corporateIBM_registerElements">
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BASE_URL}/corporate/ibm/register</arg>
+</arguments>
+<msg timestamp="20150512 23:36:52.069" level="INFO">Opening url 'http://www.caregeneral.net/corporate/ibm/register'</msg>
+<status status="PASS" endtime="20150512 23:36:52.377" starttime="20150512 23:36:52.068"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=a.logo.navbar-brand</arg>
+</arguments>
+<msg timestamp="20150512 23:36:52.393" level="INFO">Current page contains element 'css=a.logo.navbar-brand'.</msg>
+<status status="PASS" endtime="20150512 23:36:52.394" starttime="20150512 23:36:52.377"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=.logo.navbar-brand&gt;img[src*="logo-3633522c14df66d4e2d45f903b84d296.png"]</arg>
+</arguments>
+<msg timestamp="20150512 23:36:52.408" level="INFO">Current page contains element 'css=.logo.navbar-brand&gt;img[src*="logo-3633522c14df66d4e2d45f903b84d296.png"]'.</msg>
+<status status="PASS" endtime="20150512 23:36:52.408" starttime="20150512 23:36:52.394"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=#corporate-banner</arg>
+</arguments>
+<msg timestamp="20150512 23:36:52.421" level="INFO">Current page contains element 'css=#corporate-banner'.</msg>
+<status status="PASS" endtime="20150512 23:36:52.421" starttime="20150512 23:36:52.408"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=div#corporate-banner &gt; img[src*='ibm.png']</arg>
+</arguments>
+<msg timestamp="20150512 23:36:52.433" level="INFO">Current page contains element 'css=div#corporate-banner &gt; img[src*='ibm.png']'.</msg>
+<status status="PASS" endtime="20150512 23:36:52.433" starttime="20150512 23:36:52.422"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=h1.page-title</arg>
+<arg>Join CareGeneral</arg>
+</arguments>
+<msg timestamp="20150512 23:36:52.445" level="INFO">Current page contains element 'css=h1.page-title'.</msg>
+<status status="PASS" endtime="20150512 23:36:52.445" starttime="20150512 23:36:52.433"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=#new_user&gt;h2</arg>
+<arg>Join CareGeneral</arg>
+</arguments>
+<msg timestamp="20150512 23:36:52.456" level="INFO">Current page contains element 'css=#new_user&gt;h2'.</msg>
+<status status="PASS" endtime="20150512 23:36:52.457" starttime="20150512 23:36:52.445"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>id=user_name</arg>
+</arguments>
+<msg timestamp="20150512 23:36:52.469" level="INFO">Current page contains element 'id=user_name'.</msg>
+<status status="PASS" endtime="20150512 23:36:52.469" starttime="20150512 23:36:52.457"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=label.required.control-label:nth(0)</arg>
+<arg>* Name</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20150512 23:36:52.920" level="FAIL">WebDriverException: Message: unknown error: cannot take screenshot
+from unknown error: Failed to capture tab: unknown error
+JavaScript stack:
+Error: Failed to capture tab: unknown error
+    at checkForExtensionError (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:14:17)
+    at Object.callback (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:37:5)
+    at safeCallbackApply (extensions::sendRequest:21:15)
+    at handleResponse (extensions::sendRequest:73:7)
+  (Session info: chrome=42.0.2311.135)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Mac OS X 10.10.3 x86_64)
+</msg>
+<status status="FAIL" endtime="20150512 23:36:52.920" starttime="20150512 23:36:52.484"></status>
+</kw>
+<msg timestamp="20150512 23:36:52.920" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: unknown error: cannot take screenshot
+from unknown error: Failed to capture tab: unknown error
+JavaScript stack:
+Error: Failed to capture tab: unknown error
+    at checkForExtensionError (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:14:17)
+    at Object.callback (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:37:5)
+    at safeCallbackApply (extensions::sendRequest:21:15)
+    at handleResponse (extensions::sendRequest:73:7)
+  (Session info: chrome=42.0.2311.135)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Mac OS X 10.10.3 x86_64)
+</msg>
+<msg timestamp="20150512 23:36:52.921" level="FAIL">InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=42.0.2311.135)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Mac OS X 10.10.3 x86_64)
+</msg>
+<status status="FAIL" endtime="20150512 23:36:52.921" starttime="20150512 23:36:52.470"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150512 23:36:52.921" critical="yes" starttime="20150512 23:36:52.067">InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=42.0.2311.135)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Mac OS X 10.10.3 x86_64)
+</status>
+</test>
+<kw type="teardown" name="Stop Browser">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Stopping the Browser</arg>
+</arguments>
+<msg timestamp="20150512 23:36:52.923" level="INFO">Stopping the Browser</msg>
+<status status="PASS" endtime="20150512 23:36:52.923" starttime="20150512 23:36:52.922"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150512 23:36:53.001" starttime="20150512 23:36:52.923"></status>
+</kw>
+<status status="PASS" endtime="20150512 23:36:53.001" starttime="20150512 23:36:52.922"></status>
+</kw>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20150512 23:36:53.001" starttime="20150512 23:36:49.303"></status>
+</suite>
+<suite source="/Users/meghana/code/cg-robot/5_corporateGulliverRegisterElements.robot" id="s1-s5" name="5 corporateGulliverRegisterElements">
+<kw type="setup" name="Start Browser">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${BASE_URL}</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20150512 23:36:53.008" level="INFO">Opening browser 'chrome' to base url 'http://www.caregeneral.net'</msg>
+<status status="PASS" endtime="20150512 23:36:55.769" starttime="20150512 23:36:53.008"></status>
+</kw>
+<status status="PASS" endtime="20150512 23:36:55.769" starttime="20150512 23:36:53.007"></status>
+</kw>
+<test id="s1-s5-t1" name="corporateGulliverRegisterElements">
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BASE_URL}/corporate/gulliver/register</arg>
+</arguments>
+<msg timestamp="20150512 23:36:55.772" level="INFO">Opening url 'http://www.caregeneral.net/corporate/gulliver/register'</msg>
+<status status="PASS" endtime="20150512 23:36:56.133" starttime="20150512 23:36:55.772"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=a.logo.navbar-brand</arg>
+</arguments>
+<msg timestamp="20150512 23:36:56.154" level="INFO">Current page contains element 'css=a.logo.navbar-brand'.</msg>
+<status status="PASS" endtime="20150512 23:36:56.154" starttime="20150512 23:36:56.133"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=.logo.navbar-brand&gt;img[src*="logo-3633522c14df66d4e2d45f903b84d296.png"]</arg>
+</arguments>
+<msg timestamp="20150512 23:36:56.167" level="INFO">Current page contains element 'css=.logo.navbar-brand&gt;img[src*="logo-3633522c14df66d4e2d45f903b84d296.png"]'.</msg>
+<status status="PASS" endtime="20150512 23:36:56.167" starttime="20150512 23:36:56.154"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=#corporate-banner</arg>
+</arguments>
+<msg timestamp="20150512 23:36:56.180" level="INFO">Current page contains element 'css=#corporate-banner'.</msg>
+<status status="PASS" endtime="20150512 23:36:56.181" starttime="20150512 23:36:56.167"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=div#corporate-banner &gt; img[src*='guilliver.png']</arg>
+</arguments>
+<msg timestamp="20150512 23:36:56.193" level="INFO">Current page contains element 'css=div#corporate-banner &gt; img[src*='guilliver.png']'.</msg>
+<status status="PASS" endtime="20150512 23:36:56.194" starttime="20150512 23:36:56.181"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=#new_user&gt;h2</arg>
+<arg>Join CareGeneral</arg>
+</arguments>
+<msg timestamp="20150512 23:36:56.208" level="INFO">Current page contains element 'css=#new_user&gt;h2'.</msg>
+<status status="PASS" endtime="20150512 23:36:56.208" starttime="20150512 23:36:56.194"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>id=user_name</arg>
+</arguments>
+<msg timestamp="20150512 23:36:56.222" level="INFO">Current page contains element 'id=user_name'.</msg>
+<status status="PASS" endtime="20150512 23:36:56.222" starttime="20150512 23:36:56.208"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=label.required.control-label:nth(0)</arg>
+<arg>* Name</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20150512 23:36:56.898" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150512 23:36:56.898" starttime="20150512 23:36:56.238"></status>
+</kw>
+<msg timestamp="20150512 23:36:56.899" level="FAIL">InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=42.0.2311.135)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Mac OS X 10.10.3 x86_64)
+</msg>
+<status status="FAIL" endtime="20150512 23:36:56.899" starttime="20150512 23:36:56.222"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150512 23:36:56.899" critical="yes" starttime="20150512 23:36:55.770">InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=42.0.2311.135)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Mac OS X 10.10.3 x86_64)
+</status>
+</test>
+<kw type="teardown" name="Stop Browser">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Stopping the Browser</arg>
+</arguments>
+<msg timestamp="20150512 23:36:56.901" level="INFO">Stopping the Browser</msg>
+<status status="PASS" endtime="20150512 23:36:56.901" starttime="20150512 23:36:56.901"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150512 23:36:56.960" starttime="20150512 23:36:56.901"></status>
+</kw>
+<status status="PASS" endtime="20150512 23:36:56.960" starttime="20150512 23:36:56.900"></status>
+</kw>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20150512 23:36:56.960" starttime="20150512 23:36:53.003"></status>
+</suite>
+<suite source="/Users/meghana/code/cg-robot/6_success_login.robot" id="s1-s6" name="6 Success Login">
+<kw type="setup" name="Start Browser">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${BASE_URL}</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20150512 23:36:56.968" level="INFO">Opening browser 'chrome' to base url 'http://www.caregeneral.net'</msg>
+<status status="PASS" endtime="20150512 23:36:59.662" starttime="20150512 23:36:56.967"></status>
+</kw>
+<status status="PASS" endtime="20150512 23:36:59.663" starttime="20150512 23:36:56.967"></status>
+</kw>
+<test id="s1-s6-t1" name="corporateGulliverRegisterElements">
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${BASE_URL}/corporate/gulliver/register</arg>
+</arguments>
+<msg timestamp="20150512 23:36:59.666" level="INFO">Opening url 'http://www.caregeneral.net/corporate/gulliver/register'</msg>
+<status status="PASS" endtime="20150512 23:37:00.012" starttime="20150512 23:36:59.666"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=a.logo.navbar-brand</arg>
+</arguments>
+<msg timestamp="20150512 23:37:00.062" level="INFO">Current page contains element 'css=a.logo.navbar-brand'.</msg>
+<status status="PASS" endtime="20150512 23:37:00.062" starttime="20150512 23:37:00.012"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=.logo.navbar-brand&gt;img[src*="logo-3633522c14df66d4e2d45f903b84d296.png"]</arg>
+</arguments>
+<msg timestamp="20150512 23:37:00.075" level="INFO">Current page contains element 'css=.logo.navbar-brand&gt;img[src*="logo-3633522c14df66d4e2d45f903b84d296.png"]'.</msg>
+<status status="PASS" endtime="20150512 23:37:00.075" starttime="20150512 23:37:00.062"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=#corporate-banner</arg>
+</arguments>
+<msg timestamp="20150512 23:37:00.092" level="INFO">Current page contains element 'css=#corporate-banner'.</msg>
+<status status="PASS" endtime="20150512 23:37:00.092" starttime="20150512 23:37:00.075"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=div#corporate-banner &gt; img[src*='guilliver.png']</arg>
+</arguments>
+<msg timestamp="20150512 23:37:00.104" level="INFO">Current page contains element 'css=div#corporate-banner &gt; img[src*='guilliver.png']'.</msg>
+<status status="PASS" endtime="20150512 23:37:00.104" starttime="20150512 23:37:00.092"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=#new_user&gt;h2</arg>
+<arg>Join CareGeneral</arg>
+</arguments>
+<msg timestamp="20150512 23:37:00.117" level="INFO">Current page contains element 'css=#new_user&gt;h2'.</msg>
+<status status="PASS" endtime="20150512 23:37:00.117" starttime="20150512 23:37:00.105"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>id=user_name</arg>
+</arguments>
+<msg timestamp="20150512 23:37:00.129" level="INFO">Current page contains element 'id=user_name'.</msg>
+<status status="PASS" endtime="20150512 23:37:00.129" starttime="20150512 23:37:00.118"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=label.required.control-label:nth(0)</arg>
+<arg>* Name</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20150512 23:37:00.985" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20150512 23:37:00.985" starttime="20150512 23:37:00.145"></status>
+</kw>
+<msg timestamp="20150512 23:37:00.986" level="FAIL">InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=42.0.2311.135)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Mac OS X 10.10.3 x86_64)
+</msg>
+<status status="FAIL" endtime="20150512 23:37:00.986" starttime="20150512 23:37:00.129"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150512 23:37:00.986" critical="yes" starttime="20150512 23:36:59.664">InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=42.0.2311.135)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Mac OS X 10.10.3 x86_64)
+</status>
+</test>
+<kw type="teardown" name="Stop Browser">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Stopping the Browser</arg>
+</arguments>
+<msg timestamp="20150512 23:37:00.987" level="INFO">Stopping the Browser</msg>
+<status status="PASS" endtime="20150512 23:37:00.988" starttime="20150512 23:37:00.987"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150512 23:37:01.051" starttime="20150512 23:37:00.988"></status>
+</kw>
+<status status="PASS" endtime="20150512 23:37:01.052" starttime="20150512 23:37:00.987"></status>
+</kw>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20150512 23:37:01.052" starttime="20150512 23:36:56.962"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20150512 23:37:01.054" starttime="20150512 23:36:34.006"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="6" pass="0">Critical Tests</stat>
+<stat fail="6" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="6" pass="0" id="s1" name="2 Individual Register Elements &amp; 1 Success Wrongemail Wrongpassword &amp; 3 Experts Register Elements &amp; 4 corporateIBM registerElements &amp; 5 corporateGulliverRegisterElements &amp; 6 Success Login">2 Individual Register Elements &amp; 1 Success Wrongemail Wrongpassword &amp; 3 Experts Register Elements &amp; 4 corporateIBM registerElements &amp; 5 corporateGulliverRegisterElements &amp; 6 Success Login</stat>
+<stat fail="1" pass="0" id="s1-s1" name="2 Individual Register Elements">2 Individual Register Elements &amp; 1 Success Wrongemail Wrongpassword &amp; 3 Experts Register Elements &amp; 4 corporateIBM registerElements &amp; 5 corporateGulliverRegisterElements &amp; 6 Success Login.2 Individual Register Elements</stat>
+<stat fail="1" pass="0" id="s1-s2" name="1 Success Wrongemail Wrongpassword">2 Individual Register Elements &amp; 1 Success Wrongemail Wrongpassword &amp; 3 Experts Register Elements &amp; 4 corporateIBM registerElements &amp; 5 corporateGulliverRegisterElements &amp; 6 Success Login.1 Success Wrongemail Wrongpassword</stat>
+<stat fail="1" pass="0" id="s1-s3" name="3 Experts Register Elements">2 Individual Register Elements &amp; 1 Success Wrongemail Wrongpassword &amp; 3 Experts Register Elements &amp; 4 corporateIBM registerElements &amp; 5 corporateGulliverRegisterElements &amp; 6 Success Login.3 Experts Register Elements</stat>
+<stat fail="1" pass="0" id="s1-s4" name="4 corporateIBM registerElements">2 Individual Register Elements &amp; 1 Success Wrongemail Wrongpassword &amp; 3 Experts Register Elements &amp; 4 corporateIBM registerElements &amp; 5 corporateGulliverRegisterElements &amp; 6 Success Login.4 corporateIBM registerElements</stat>
+<stat fail="1" pass="0" id="s1-s5" name="5 corporateGulliverRegisterElements">2 Individual Register Elements &amp; 1 Success Wrongemail Wrongpassword &amp; 3 Experts Register Elements &amp; 4 corporateIBM registerElements &amp; 5 corporateGulliverRegisterElements &amp; 6 Success Login.5 corporateGulliverRegisterElements</stat>
+<stat fail="1" pass="0" id="s1-s6" name="6 Success Login">2 Individual Register Elements &amp; 1 Success Wrongemail Wrongpassword &amp; 3 Experts Register Elements &amp; 4 corporateIBM registerElements &amp; 5 corporateGulliverRegisterElements &amp; 6 Success Login.6 Success Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20150512 23:36:52.920" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: unknown error: cannot take screenshot
+from unknown error: Failed to capture tab: unknown error
+JavaScript stack:
+Error: Failed to capture tab: unknown error
+    at checkForExtensionError (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:14:17)
+    at Object.callback (chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/background.js:37:5)
+    at safeCallbackApply (extensions::sendRequest:21:15)
+    at handleResponse (extensions::sendRequest:73:7)
+  (Session info: chrome=42.0.2311.135)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Mac OS X 10.10.3 x86_64)
+</msg>
+</errors>
+</robot>
